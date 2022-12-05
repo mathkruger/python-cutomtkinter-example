@@ -1,11 +1,11 @@
 class GradesService():    
     def get_avarage(self, notas):
-        soma = 0
+        sum = 0
         for i in range(len(notas)):
-            soma += notas[i]
+            sum += notas[i]
         
-        media = soma / len(notas)
-        return media
+        avg = sum / len(notas)
+        return avg
     
     def get_points_to_add(self, avarage):
         points = 0
